@@ -16,7 +16,7 @@ $qr = new PaynowQR\PaynowQR($opts);
 $qrstr = $qr->generate();
 print $qrstr . "\n\n";
 
-$imageString = PaynowQR\qrcode($qrstr,  __DIR__.'/api-logo.png');
+$imageString = PaynowQR\qrcode($qrstr,  __DIR__.'/paynow-logo.png');
 print $imageString . "\n\n";
 
 
