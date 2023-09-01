@@ -10,7 +10,11 @@ This plugin provides shortcodes for generating Paynow QR code.
 
 # References
 
-The paynow QR code generated are adapted from [PaynowQR](https://github.com/ThunderQuoteTeam/PaynowQR).
+The Javascript QR code are taken from https://gist.github.com/chengkiang/7e1c4899768245570cc49c7d23bc394c.
+
+The Javasript QR code are taken from https://github.com/davidshimjs/qrcodejs.
+
+The PHP paynow QR code generated are adapted from [PaynowQR](https://github.com/ThunderQuoteTeam/PaynowQR).
 
 The CRC script is taken from https://beccati.com/crc16.php.
 
