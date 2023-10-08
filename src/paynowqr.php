@@ -64,7 +64,7 @@ class PaynowQR{
  
 
     if(isset($opts->refNumber)) {
-      $p[] = new PayNowField('62', array(                     // ID 62: Additional data fields
+      $p[] = new PayNowField('62', value: array(                     // ID 62: Additional data fields
         new PayNowField('01', strval($opts->refNumber ?? ''))   // ID 01: Bill Number
       ));
     }
