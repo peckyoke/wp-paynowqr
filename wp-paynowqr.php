@@ -33,7 +33,7 @@ function paynowqr_qrcode_shortcode($atts) {
     $qr = new PaynowQR\PaynowQR($opts);
     $qrstr = $qr->generate();
     // return $qrstr;
-    $imageString = PaynowQR\qrcode($qrstr, PAYNOWQR_PLUGIN_DIR . '/src/paynow-logo-bw.png');
+    $imageString = PaynowQR\qrcode($qrstr, PAYNOWQR_PLUGIN_DIR . '/src/paynow-logo.png');
     // // return '<img src="' . $imageString . '">';
     // // return $qrstr;
     return $imageString;
