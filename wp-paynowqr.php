@@ -2,7 +2,7 @@
 /**
  * Plugin Name: PaynowQR
  * Description: Singapore Paynow QR code
- * Version: 2.0.1
+ * Version: 2.0.2
  * Author: Leong Peck Yoke
  * Author URI: https://github.com/peckyoke
  * Text Domain: wp-paynowqr
