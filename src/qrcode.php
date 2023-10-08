@@ -22,8 +22,9 @@ namespace PaynowQR;
 
 use chillerlan\QRCode\{QRCode, QROptions};
 use chillerlan\QRCode\Common\EccLevel;
+use chillerlan\QRCode\Output\QROutputInterface;
 use chillerlan\QRCode\Data\QRMatrix;
-use chillerlan\QRCode\Output\{QRCodeOutputException, QRImage};
+use chillerlan\QRCode\Output\{QRCodeOutputException, QRGdImage};
 
 require_once __DIR__.'/vendor/autoload.php';
 
@@ -32,7 +33,7 @@ require_once __DIR__.'/vendor/autoload.php';
 /**
  * @property \chillerlan\QRCodeExamples\LogoOptions $options
  */
-class QRImageWithLogo extends QRImage{
+class QRImageWithLogo extends QRGdImage{
 
 	/**
 	 * @param string|null $file
@@ -116,7 +117,7 @@ function qrcode ($qrstr, $logo=null) {
 		$options->scale            = 3;
 		$options->imageTransparent = false;
 		// $options->drawLightModules    = true;
-		// $options->outputType = QRCode::OUTPUT_IMAGE_PNG;
+		$options->outputType = QROutputInterface::GDIMAGE_PNG;
 		// $options->pngCompression = 9;
 		$options->bgColor = [255,0,255];
 		$options->moduleValues        = [
